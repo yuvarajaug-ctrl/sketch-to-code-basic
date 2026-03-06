@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Testing</title>
+</head>
+
+<body>
+<div align="center">
+
+ 					{% if act=="1" %}
+					   <h4>Test Image</h4>
+					   <img src="../static/dataset/{{fn}}" width="150" height="150">
+					   
+					    <script>
+						//Using setTimeout to execute a function after 5 seconds.
+						setTimeout(function () {
+						   //Redirect with JavaScript
+						  window.location.href="/test_pro?act=2";
+						}, 3000);
+						</script> 
+					{% elif act=="2" %}
+					   <h4>Noice Filter</h4>
+					   <img src="../static/trained/ns_{{fn}}" width="150" height="150">
+					   
+					    <script>
+						//Using setTimeout to execute a function after 5 seconds.
+						setTimeout(function () {
+						   //Redirect with JavaScript
+						  window.location.href="/test_pro?act=3";
+						}, 3000);
+						</script> 
+					{% elif act=="3" %}
+					   <h4>Binarization</h4>
+					   <img src="../static/trained/bb/bin_{{fn}}" width="150" height="150">
+					   
+					    <script>
+						//Using setTimeout to execute a function after 5 seconds.
+						setTimeout(function () {
+						   //Redirect with JavaScript
+						  window.location.href="/test_pro?act=4";
+						}, 3000);
+						</script> 
+					{% elif act=="4" %}
+					   <h4>Segmentation</h4>
+					   <img src="../static/trained/sg/sg_{{fn}}" width="150" height="150">
+					   
+					    <script>
+						//Using setTimeout to execute a function after 5 seconds.
+						setTimeout(function () {
+						   //Redirect with JavaScript
+						  window.location.href="/test_pro?act=5";
+						}, 3000);
+						</script> 
+					{% elif act=="5" %}
+					   <h4>Feature Extraction</h4>
+					   <img src="../static/trained/ff/{{fn}}" width="150" height="150">
+					   
+					    <script>
+						//Using setTimeout to execute a function after 5 seconds.
+						setTimeout(function () {
+						   //Redirect with JavaScript
+						  window.parent.location.href="/test_result";
+						}, 3000);
+						</script>
+					{% elif act=="6" %}
+					 
+					   {% endif %}
+
+</div>
+</body>
+</html>

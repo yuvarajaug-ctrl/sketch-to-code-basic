@@ -1,0 +1,6 @@
+<li class="header-notification">
+                                <a href="#!">
+                                    <i class="ti-bell"></i>
+                                    <span class="badge bg-c-pink"></span>                                </a>
+                               
+                            </li>

@@ -1,0 +1,15 @@
+Flask
+mysql-connector-python
+opencv-python
+numpy
+pillow
+pandas
+matplotlib
+seaborn
+plotly
+imagehash
+scikit-image
+scipy
+torch
+torchvision
+werkzeug

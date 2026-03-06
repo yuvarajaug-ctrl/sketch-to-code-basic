@@ -1,0 +1,290 @@
+<html lang="en">
+
+<head>
+    <title>Sketch Image</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="CodedThemes">
+    <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="CodedThemes">
+    <!-- Favicon icon -->
+    <link rel="icon" href="../static/assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/bootstrap/css/bootstrap.min.css">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="../static/assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="../static/assets/icon/icofont/css/icofont.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/style.css">
+
+<script language="javascript">
+function validate()
+{
+	if(document.form1.name.value=="")
+	{
+	alert("Enter the Name");
+	document.form1.name.focus();
+	return false;
+	}
+	
+	if(document.form1.mobile.value=="")
+	{
+	alert("Enter the Mobile No.");
+	document.form1.mobile.focus();
+	return false;
+	}
+	if(isNaN(document.form1.mobile.value))
+	{
+	alert("Invalid Mobile No.");
+	document.form1.mobile.select();
+	return false;
+	}
+	if(document.form1.mobile.value.length!=10)
+	{
+	alert("Mobile No. must be 10 digits!");
+	document.form1.mobile.select();
+	return false;
+	}
+	if(document.form1.email.value=="")
+	{
+	alert("Enter the Email");
+	document.form1.email.focus();
+	return false;
+	}
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.form1.email.value))  
+	{
+	
+	}
+	else
+	{
+	alert("Invalid E-mail!");
+	document.form1.email.select();
+	return false;
+	}
+	if(document.form1.city.value=="")
+	{
+	alert("Enter the City");
+	document.form1.city.focus();
+	return false;
+	}
+	if(document.form1.uname.value=="")
+	{
+	alert("Enter the Username");
+	document.form1.uname.focus();
+	return false;
+	}
+	if(document.form1.pass.value=="")
+	{
+	alert("Enter the Password");
+	document.form1.pass.focus();
+	return false;
+	}
+	if(document.form1.cpass.value=="")
+	{
+	alert("Enter the Confirm Password");
+	document.form1.cpass.focus();
+	return false;
+	}
+	if(document.form1.pass.value!=document.form1.cpass.value)
+	{
+	alert("Password does not match!");
+	document.form1.cpass.select();
+	return false;
+	}
+return true;
+}
+</script>
+
+</head>
+
+<body class="fix-menu">
+    <!-- Pre-loader start -->
+    <!--<div class="theme-loader">
+    <div class="ball-scale">
+        <div class='contain'>
+            <div class="ring"><div class="frame"></div></div>
+            <div class="ring"><div class="frame"></div></div>
+            <div class="ring"><div class="frame"></div></div>
+            <div class="ring"><div class="frame"></div></div>
+            <div class="ring"><div class="frame"></div></div>
+            <div class="ring"><div class="frame"></div></div>
+            <div class="ring"><div class="frame"></div></div>
+            <div class="ring"><div class="frame"></div></div>
+            <div class="ring"><div class="frame"></div></div>
+            <div class="ring"><div class="frame"></div></div>
+        </div>
+    </div>
+</div>-->
+    <!-- Pre-loader end  common-img-bg-->
+    <section class="login p-fixed d-flex text-center bg-primary common-img-bg">
+        <!-- Container-fluid starts -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- Authentication card start -->
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+                    <div class="signup-card card-block auth-body mr-auto ml-auto" style="color:#000000">
+                        <form class="md-float-material" name="form1" method="post">
+                            <div class="text-center">
+                                <img src="../static/assets/images/auth/logo-dark.png" alt="logo.png">
+                            </div>
+                            <div class="auth-box">
+                                <div class="row m-b-20">
+                                    <div class="col-md-12">
+                                        <h3 class="text-center txt-primary">Coder Registration</h3>
+                                    </div>
+                                </div>
+                                <hr/>
+                                <div class="row" align="left">
+									<div class="col-md-6">
+									<label>Name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="">
+                                    <span class="md-line"></span>
+									</div>
+                                
+									<div class="col-md-6" align="left">
+									<label>Mobile No.</label>
+                                    <input type="text" name="mobile" class="form-control" maxlength="10" placeholder="">
+                                    <span class="md-line"></span>
+									</div>
+                                
+								
+                                	<div class="col-md-6" align="left">
+									<label>Email</label>
+                                    <input type="text" name="email" class="form-control" placeholder="Your Email Address">
+                                    <span class="md-line"></span>
+									</div>
+                                
+									<div class="col-md-6" align="left">
+									<label>City</label>
+                                    <input type="text" name="city" class="form-control" placeholder="">
+                                    <span class="md-line"></span>
+									</div>
+                                
+									<div class="col-md-6" align="left">
+									<label>Username</label>
+                                    <input type="text" name="uname" class="form-control" placeholder="">
+                                    <span class="md-line"></span>
+									</div>
+                                
+                                	<div class="col-md-6" align="left">
+									<label>Password</label>
+                                    <input type="password" name="pass" class="form-control" placeholder="">
+                                    <span class="md-line"></span>
+                                	</div>
+                                	<div class="col-md-6" align="left">
+									<label>Confirm Password</label>
+                                    <input type="password" name="cpass" class="form-control" placeholder="">
+                                    <span class="md-line"></span>
+									</div>
+									
+                              	</div>
+                                <div class="row m-t-30">
+                                    <div class="col-md-12">
+                                        <button type="sbmit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" onClick="return validate()">Sign up now</button>
+                                    </div>
+                                </div>
+                                <hr/>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        {% if msg=="success" %}
+                                        <span style="color:#0066FF">Registered Success</span>
+										<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/login_user';
+}, 3000);
+</script>
+										{% endif %}
+										{% if msg=="fail" %}
+                                        <span style="color:#993333">Username Already Exist!</span>
+										{% endif %}
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="/login_user">Sign In</a> / <a href="/">Home</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+						<p>&nbsp;</p>
+                        <!-- end of form -->
+                    </div>
+                    <!-- Authentication card end -->
+                </div>
+                <!-- end of col-sm-12 -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container-fluid -->
+    </section>
+	
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 9]>
+<div class="ie-warning">
+    <h1>Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="assets/images/browser/chrome.png" alt="Chrome">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="assets/images/browser/firefox.png" alt="Firefox">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="assets/images/browser/opera.png" alt="Opera">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="assets/images/browser/safari.png" alt="Safari">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="assets/images/browser/ie.png" alt="">
+                    <div>IE (9 & above)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+    <!-- Warning Section Ends -->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="../static/assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/assets/js/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../static/assets/js/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="../static/assets/js/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="../static/assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="../static/assets/js/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="../static/assets/js/modernizr/css-scrollbars.js"></script>
+    <script type="text/javascript" src="../static/assets/js/common-pages.js"></script>
+</body>
+
+</html>

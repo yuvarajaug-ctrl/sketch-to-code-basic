@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .signup-container {
+      width: 600px;
+      max-width: 95%;
+      margin: 50px auto;
+      border: 1px solid #ccc;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 12px #aaa;
+    }
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; 
+      margin-bottom: 15px;
+    }
+    .form-group {
+      flex: 1; 
+      min-width: 200px;
+    }
+    .signup-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .signup-container input[type="text"],
+    .signup-container input[type="email"],
+    .signup-container input[type="password"],
+    .signup-container input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box; 
+    }
+    .signup-container .terms {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+    }
+    .signup-container .terms input {
+      margin-right: 10px;
+    }
+    .button-row {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .signup-container button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .signup-container button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+    <form method="post" action="/signup">
+      <!-- Row 1 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="" required>
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="" required>
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm_password" placeholder="" required>
+        </div>
+      </div>
+      <div class="terms">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms and Conditions</label>
+      </div>
+      <div class="button-row">
+        <button type="submit">Sign Up</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

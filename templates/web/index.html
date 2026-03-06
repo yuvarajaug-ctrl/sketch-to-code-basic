@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sketch to Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../static/web/css/bootstrap.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            min-height: 100vh;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            backdrop-filter: blur(15px);
+            background: rgba(255,255,255,0.08);
+            padding: 15px 40px;
+        }
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 700;
+            color: #fff !important;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #ffd369 !important;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .btn-custom {
+            padding: 12px 35px;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            transition: 0.4s;
+            margin: 10px;
+        }
+
+        .btn-primary-custom {
+            background: #ffd369;
+            color: #000;
+        }
+
+        .btn-primary-custom:hover {
+            background: #fff;
+            transform: scale(1.1);
+        }
+
+        .btn-outline-custom {
+            border: 2px solid #fff;
+            color: #fff;
+            background: transparent;
+        }
+
+        .btn-outline-custom:hover {
+            background: #fff;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Image Animation */
+        .hero img {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 30px;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        @media(max-width:768px){
+            .hero h1{
+                font-size: 38px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Sketch2Code</a>
+    <div class="ml-auto">
+        <a class="nav-link d-inline" href="/login_user">Coder</a>
+        <a class="nav-link d-inline" href="/login">Admin</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Transform Sketches into Code</h1>
+        <p>
+            Intelligent Designer-Centric IDE that converts hand-drawn layouts
+            into fully functional HTML & CSS instantly.
+        </p>
+
+        <a href="/login_user" class="btn btn-custom btn-primary-custom">
+            <i class="fas fa-rocket"></i> Get Started
+        </a>
+
+        <a href="/login" class="btn btn-custom btn-outline-custom">
+            <i class="fas fa-user-shield"></i> Admin Panel
+        </a>
+
+        <div>
+            <img src="../static/web/images/sk1.png" alt="Sketch Preview">
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Sketch to Code | AI Powered IDE for Designers</p>
+</footer>
+
+<!-- JS -->
+<script src="../static/web/js/jquery.min.js"></script>
+<script src="../static/web/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
