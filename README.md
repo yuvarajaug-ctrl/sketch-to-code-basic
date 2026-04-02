@@ -1,2 +1,3 @@
 # sketch-to-code
-My final year project
+Sample project
+that is using Image hashing function
