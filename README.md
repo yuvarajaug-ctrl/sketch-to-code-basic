@@ -1,3 +1,3 @@
 # sketch-to-code(Elements only)
-Sample project /n
-that is using Image hashing function
+
+this project is using Image hashing function only not AI/ML
